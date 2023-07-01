@@ -1,0 +1,41 @@
+#image-2 {
+    background-image:
+        linear-gradient(to left, #000 40%, transparent 58%),
+        url(https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/TVOD/TVOD_MLP_Left.jpg);
+    background-position: left top;
+
+}
+
+#image-2 .dv-image {
+    background-image: none;
+}
+
+@media all and (max-width: 1024px) and (orientation: portrait) {
+    #image-2 {
+        background-color: #000;
+        background-image: none;
+    }
+
+    #image-2 .dv-image {
+        background-image: linear-gradient(to top, #000 0%, transparent 20%),
+            url(https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/TVOD/TVOD_MLP_Left._SX1440_CR0,0,865,675_QL80_AC_FP_.jpg);
+    }
+}
+
+#image-2 .dv-copy-button {
+    background-color: #0F79AF !important;
+    background-image: linear-gradient(to top, #0F79AF, #0F79AF);
+    color: #fff;
+}
+
+
+.container-2 {
+    width: 60%;
+    height: 75vh;
+    padding-left: 100px;
+    /* background-color: aqua; */
+    display: flex;
+    float: right;
+    /* justify-content: center; */
+    align-items: center;
+}

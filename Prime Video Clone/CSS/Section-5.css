@@ -1,0 +1,45 @@
+#image-4 {
+    background-image:
+        linear-gradient(to right, #000 40%, transparent 58%),
+        url(https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/IN-kids-30Jan._CB1517304519_.jpg);
+    background-position: right top;
+}
+
+#image-4 .dv-image {
+    background-image: none;
+}
+
+@media all and (max-width: 1024px) and (orientation: portrait) {
+    #image-4 {
+        background-color: #000;
+        background-image: none;
+    }
+
+    #image-4 .dv-image {
+        background-image: linear-gradient(to top, #000 0%, transparent 20%),
+            url(https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/IN-kids-30Jan._SX1440_CR575,0,865,675_QL80_AC_FP_.jpg);
+    }
+}
+
+#image-4 .dv-copy-button {
+    background-color: #0F79AF !important;
+    background-image: linear-gradient(to top, #0F79AF, #0F79AF);
+    color: #fff;
+}
+
+.container-5 {
+    width: 60%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+
+}
+.heading-5{
+    font-size: 45px;
+    margin: 25px 0px;
+}
+.p-5{
+    font-size: 23px;
+    padding-right: 70px;
+    margin-bottom: 40px;
+}

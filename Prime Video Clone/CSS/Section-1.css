@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+#image-1 {
+    background-image:
+        linear-gradient(to right, #000 40%, transparent 58%), url(https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP.jpg);
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+#image-1 .mobile-bg-placeholder {
+    background-image: none;
+    background-repeat: no-repeat;
+}
+
+@media all and (max-width: 1024px) {
+    #image-1 {
+        background-size: cover;
+    }
+}
+
+@media all and (max-width: 1024px) and (orientation: portrait) {
+    #image-1 {
+        background-color: #000;
+        background-image: none;
+    }
+
+    #image-1 .mobile-bg-placeholder {
+        background-image: linear-gradient(to top, #000 0%, transparent 20%),
+            url(https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP._SX1440_CR575,0,865,675_QL80_AC_FP_.jpg);
+    }
+
+}
+
+.container-1 {
+    width: 60%;
+    height: 75vh;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.heading-1{
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-family: 'Quicksand';
+}
+.p-1{
+    font-size: 23px;
+    margin-bottom: 20px;
+}

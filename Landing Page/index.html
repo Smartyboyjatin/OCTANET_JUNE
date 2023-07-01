@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Images/logo.png" type="Images/x-icon">
+    <title>www.TechVantageSolutions.ac.in</title>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <style>
+        * {
+            margin: 0%;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        .heading {
+            display: flex;
+            width: 8;
+            justify-content: center;
+            font-size: 30px;
+
+        }
+
+        body,
+        h1,
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        main,
+        footer {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* *************** Navbar *************************************888 */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+            /* background-color: blue; */
+            padding: 0px 30px;
+            /* color: aliceblue; */
+        }
+
+        .logo {
+            font-size: 25px;
+            text-transform: uppercase;
+            padding-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navitems {
+            display: flex;
+            list-style: none;
+
+        }
+
+        .navitems a {
+            text-decoration: none;
+            padding: 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: rgb(0, 0, 0);
+            /* margin: 20px; */
+        }
+
+        .navitems a:hover {
+            color: brown;
+            /* background-color: white; */
+
+        }
+
+        /* *********************** Home Page ******************************** */
+        .maincontainer {
+            background-image: url(/Images/img9.jpg);
+            box-sizing: border-box;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .Home {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+
+        }
+
+        .Home div {
+            align-self: center;
+            width: 100%;
+            height: 55vh;
+            padding: 0 50vh;
+            /* height: 100vh; */
+        }
+
+        .homecontant h1 {
+            font-size: 50px;
+            text-transform: capitalize;
+            padding: 10px 0;
+            color: #6a0f1e;
+
+        }
+
+        .homecontant h2 {
+            font-size: 30px;
+            padding: 10px 0;
+            color: rgb(0, 0, 0);
+        }
+
+        button {
+            padding: 8px 25px;
+            margin: 50px 10px;
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+
+            /* border-radius: 10px; */
+        }
+
+        button:hover {
+            color: black;
+            background-color: #82083d;
+            border: none;
+        }
+
+        /* **************************** Services Page ******************************* */
+        .Services {
+            width: 100%;
+            height: 100vh;
+            background-color: palevioletred;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Services div {
+            height: 80vh;
+            width: 80%;
+            background-color: burlywood;
+            display: flex;
+
+        }
+
+        .service {
+            margin-bottom: 20px;
+            margin: 30px;
+            /* border: 1px solid #ccc; */
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .mainservices {
+            display: flex;
+            padding: 30px;
+        }
+
+        .service img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+
+        footer {
+            text-align: center;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .about {
+            margin-bottom: 20px;
+            /* border: 1px solid #ccc; */
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+
+        .img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .contact-info,
+        .contact-form {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .maincontact {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ccc;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/Images/logo.png" alt="" width="70px"
+                    height="70px">
+                <h3>Landing page</h3>
+            </div>
+            <ul class="navitems">
+                <a href="">
+                    <li>Home</li>
+                </a>
+                <a href="#Services">
+                    <li>Services</li>
+                </a>
+                <a href="">
+                    <li>Products</li>
+                </a>
+                <a href="#about">
+                    <li>About</li>
+                </a>
+                <a href="#contact">
+                    <li>Contect</li>
+                </a>
+            </ul>
+        </nav>
+        <header class="Home">
+            <div class="homecontant">
+                <h1>Welcome to TechVantage Solutions</h1>
+                <h2>Your partner for innovative IT solutions</h2>
+                <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda aliquam voluptatibus aspernatur
+                    voluptatem sapiente! Beatae nisi tempore provident totam saepe libero exercitationem explicabo.
+                    Repudiandae dolorum, itaque commodi est perferendis iure.</h5>
+                <a href=""><button>Apply</button></a>
+                <a href=""><button>More</button></a>
+            </div>
+        </header>
+    </div>
+    <section id="Services">
+        <header class="heading">
+            <h1>Our Services</h1>
+        </header>
+
+        <main class="mainservices">
+            <div class="service">
+                <img src="/Images/webdesign.png" alt="Service 1">
+                <h2>Web design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lectus at erat sagittis
+                    sollicitudin et eu mauris. Sed ac enim in justo consequat varius.</p>
+            </div>
+
+            <div class="service">
+                <img src="/Images/clude.jpg" alt="Service 2">
+                <h2>Clude Support</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lectus at erat sagittis
+                    sollicitudin et eu mauris. Sed ac enim in justo consequat varius.</p>
+            </div>
+
+            <div class="service">
+                <img src="/Images/network.jpg" alt="Service 3">
+                <h2>Network Security</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lectus at erat sagittis
+                    sollicitudin et eu mauris. Sed ac enim in justo consequat varius.</p>
+            </div>
+        </main>
+    </section>
+
+    <section id="about">
+        <header class="heading">
+            <h1>About Us</h1>
+        </header>
+
+        <main>
+            <div class="about">
+                <h2>Our Story</h2>
+                <p>The organization began with a vision to make a positive impact in the world. Founded on the
+                    principles of innovation and compassion, our story is one of perseverance and dedication. Through
+                    countless challenges and milestones, we have grown into a leading force in our industry, driven by
+                    our unwavering commitment to excellence. Guided by our core values, we strive to create
+                    transformative solutions that address pressing global issues. Our team, comprising diverse talents
+                    and expertise, works collaboratively to bring about meaningful change. With a shared passion and a
+                    relentless pursuit of our mission, we continue to write our story, one chapter at a time.</p>
+            </div>
+
+            <div class="about">
+                <h2>Our Mission</h2>
+                <p>Our mission is to revolutionize the IT industry through innovative solutions that empower businesses
+                    and individuals. We are committed to delivering cutting-edge technologies and services that drive
+                    digital transformation, enhance productivity, and foster growth. With a customer-centric approach,
+                    we strive to understand and anticipate our clients' needs, providing tailored solutions that exceed
+                    their expectations. We aim to build long-term partnerships based on trust, integrity, and mutual
+                    success. Through continuous learning and adaptability, we stay at the forefront of technological
+                    advancements, enabling us to navigate the ever-evolving landscape of the IT industry. Our mission is
+                    to empower our clients with the tools they need to thrive in the digital age.</p>
+            </div>
+
+            <div class="about">
+                <h1 class="heading">Our Team</h1>
+                <main class="mainservices">
+                    
+                    <div class="service">
+                        <img src="/Images/arpita.jpg" alt="Service 2">
+                        <h2>Miss. Arpita Singh</h2>
+                        <p>Creative web designer with an eye for aesthetics and user experience. Combining technical
+                            expertise with artistic flair, our web designer crafts visually stunning and intuitive
+                            websites.</p>
+                        </div>
+                        <div class="service">
+                            <img src="/Images/jatin.jpg" alt="Service 1">
+                            <h2>Er. Jatin kumar</h2>
+                            <p>Visionary leader driving transformation and growth in the digital era. With a strategic
+                                mindset and a passion for innovation, our CEO spearheads our organization towards success.
+                            </p>
+                        </div>
+                    <div class="service">
+                        <img src="/Images/abhay.avif" alt="Service 3">
+                        <h2>Mr. Abhay Kumar</h2>
+                        <p>Efficient and strategic business administrator at the helm of our organization. With a keen
+                            understanding of operations and a focus on optimization, our business administrator ensures
+                            seamless.</p>
+                    </div>
+                </main>
+            </div>
+        </main>
+    </section>
+    <section id="contact">
+        <header class="heading">
+            <h1>Contact Us</h1>
+        </header>
+
+        <main class="maincontact">
+            <div class="contact-info">
+                <h2>TechVantage Solutions</h2>
+                <p>456 Innovation Avenue</p>
+                <p>Silicon Valley, CA 12345</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: TechVantage Solutions@gmail.com</p>
+            </div>
+
+            <form class="contact-form">
+                <h2>Contact Form</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </section>
+    <footer>
+        <p>&copy; 2023 TechVantage Solutions. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

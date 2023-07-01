@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Amazon Ember";
+  src: url("https://m.media-amazon.com/images/G/01/digital/video/global/AmazonEmber_Lt.woff") format("woff");
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale;
+}
+#Footer{
+  background-color: #222222;
+  height: 130px;
+
+
+}
+.Footer__footer {
+  font-family: "Amazon Ember";
+  text-align: center;
+}
+
+.Footer__footer .Footer__logo {
+  margin-top: 20px;
+  max-height: 32px;
+}
+
+.Footer__footer .Footer__text {
+  margin: 4px 0 14px;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.Footer__footer .Footer__text .Footer__link {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.Footer__footer .Footer__text .Footer__link a {
+  text-decoration: none;
+}
+
+.Footer__footer .Footer__copyright {
+  font-size: 15px;
+  color: #949494;
+}
+
+.Footer__footer.DVPAWebWidgetsFooter_Footer__lightFooter .Footer__link a {
+  color: #05579f;
+}
+
+.Footer__footer.DVPAWebWidgetsFooter_Footer__lightFooter .Footer__copyright {
+  color: #000;
+}
+
+.Footer__footer.DVPAWebWidgetsFooter_Footer__darkFooter {
+  background-color: #222222;
+}
+
+.Footer__footer.DVPAWebWidgetsFooter_Footer__darkFooter .Footer__link a {
+  color: #0f79af;
+}
+
+.dv-signup-theme-av .Footer__footer {
+  background-color: #222222;
+  color: #949494;
+}
+
+
+@media only screen and (max-width: 880px) {
+
+  .Footer__footer .Footer__text a,
+  .Footer__footer .Footer__copyright {
+    font-size: 13px;
+    line-height: 1.6em;
+  }
+}
